@@ -1,9 +1,0 @@
-
-public class First {
-	String msg="iki class durumu";
-	public static void main(String[] args) {
-		Second Elma=new Second();
-		System.out.println(Elma.a);
-	}
-
-}

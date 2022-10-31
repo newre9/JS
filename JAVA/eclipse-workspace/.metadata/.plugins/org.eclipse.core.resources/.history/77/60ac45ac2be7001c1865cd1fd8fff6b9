@@ -1,9 +1,0 @@
-
-public class Second {
-  int a=75;
-	public static void main(String[] args) {
-		First Kiraz=new First();
-		System.out.println(Kiraz.msg);
-	}
-
-}
