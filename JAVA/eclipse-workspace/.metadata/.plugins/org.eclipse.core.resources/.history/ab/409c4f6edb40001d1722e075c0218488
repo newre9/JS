@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Lab2C {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int k=-1;
+		while(k>0) {
+			System.out.println("Sayı Test etmek için 1 'e basın");
+			System.out.println("çıkmak için 2'e basın");
+			
+		}
+		
+
+	}
+
+}

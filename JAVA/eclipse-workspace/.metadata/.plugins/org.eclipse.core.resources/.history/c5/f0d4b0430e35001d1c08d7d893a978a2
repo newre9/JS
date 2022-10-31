@@ -1,0 +1,11 @@
+
+public class Array1C {
+
+	public static void main(String[] args) {
+		String[] cars= {"BMW","FORD","VOLVO"};
+		
+		System.out.println(cars[1]);
+
+	}
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="demo">
+    <p id="pid"></p>
+    <button onclick=" myFunction()">Kontrol et    </button>
+<script>
+    function myFunction(){
+        let i=document.getElementById("demo").value;
+        let pi=document.getElementById("pid");
+        pi.innerHTML="";
+        pi.style.color="red";
+        try{
+            if(i=="") throw "input boş olamaz";
+            if(isNaN(i)) throw  "girdiğiniz bir sayı değil";
+            if(i<5) throw "girilen sayı 5 ten küçük olamaz";
+            if(i>10) throw "girilen sayı 10 dan büyük olamaz";
+            if(i>=5 && i<=10){
+                document.getElementById("pid").innerHTML="başarılı bir giriş ";
+                document.getElementById("pid").style.color="green";
+            }
+        }
+        catch(e){
+            document.getElementById("pid").innerHTML=e;
+        }
+        finally{
+            document.getElementById("demo").value="";
+        }
+    }
+</script>
+</body>
+</html>

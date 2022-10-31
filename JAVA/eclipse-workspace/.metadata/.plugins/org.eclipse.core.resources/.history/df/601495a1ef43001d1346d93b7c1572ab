@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test1C {
+
+	public static void main(String[] args) {
+		 Scanner input=new Scanner(System.in);
+	     ArrayList<String> Doktor=new ArrayList<String>();
+	     int key=5;
+	     while(key==5){
+	         System.out.println("Lutfen bir secim yapin ");
+	         System.out.println("*************");
+	         System.out.println("-0- Sistem cikmak icin ");
+	         System.out.println("-1- Randevu al");
+	         System.out.println("-2- Doktor Sayfasi");
+	         System.out.println("-3- Bashekim sayfasi");
+	         String secim=input.nextLine();
+	         switch(secim){
+	            case "0":
+	               key=0;
+	                break;
+	            case "1":
+	                System.out.println("lutfen isim girin");
+	                String isim=input.nextLine();
+	                Doktor.add(isim);
+	                System.out.println("isminiz basari bir sekilde kaydedildi");
+	                System.out.println("MENU icin 5 CIKMAK icin 0 basin ");
+					int  keykontrol=input.nextInt();
+					input.nextLine();
+					key=keykontrol;
+	                break;
+	            case "2":
+	                System.out.println(Doktor);
+	            	System.out.println("MENU icin 5 CIKMAK icin 0 basin ");
+					int  keykontrol=input.nextInt();
+					input.nextLine();
+					key=keykontrol;
+	                break;
+	            case "3":
+	                System.out.println("bashekim ");
+	                break;
+	            default :
+	                System.out.println("gecersiz secim");
+	                break;
+	         }
+	         
+	     }
+	     System.out.println("sistemden çıkış yaptınız");
+	     
+}
+}

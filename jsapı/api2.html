@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="userID">
+<button onClick="getUser()">Get user</button>
+<button onClick="getAllUsers()">Get all</button>
+<br>
+<div id="singleUser"></div>
+<div id="allUsers"></div>
+<script>
+
+
+ var userID = document.getElementById("userID");
+const url1 = "https://jsonplaceholder.typicode.com/users/";
+const url2 = "https://jsonplaceholder.typicode.com/users";
+//JSON.stringify(data)
+function getUser() {
+  fetch(url1 + userID.value)
+    .then(res => res.json())
+    .then(data => {
+      var all = "<p>" + "Name: " + data.name + "</p>";
+      all += "<p>" + "Phone: " + data.phone + "</p>";
+
+      document.getElementById("singleUser").innerHTML = all;
+    });
+}
+
+//***************Code that needs look on is right here ********************
+
+function getAllUsers() {
+  fetch(url2)
+    .then(res => res.json())
+    .then(data => {
+      // Traditional for loop
+      var all = "";
+      for (var i = 0; i < data.length; i++) {
+        //console.log(data[i]);
+        all += "<p>" + "Name: " + data[i].name + "</p>";
+        all += "<p>" + "Phone: " + data[i].phone + "</p>";
+      }
+      document.getElementById("allUsers").innerHTML = all;
+
+
+     
+    });
+}
+</script>
+</body>
+</html>

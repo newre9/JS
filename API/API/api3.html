@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <button onclick="Alluser()">Bütün Kullanıcıları Getir</button>
+        <div id="alan"></div>
+        <script>
+function Alluser(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res=>res.json())
+    .then(data=>{
+        var all="";
+
+        for(var i=0;i<data.length;i++){
+            all+="<p>"+"İsim:"+data[i].name+"</p>";
+            all+="<p>"+"telefon:"+data[i].phone+"</p>";
+        }
+        document.getElementById("alan").innerHTML=all;
+
+    })
+}
+        </script>
+    </body>
+</html>

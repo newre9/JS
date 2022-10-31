@@ -1,0 +1,25 @@
+package projem;
+
+public class MainClass {
+		
+	static float KareBul(float a,float b) {
+		float bolme=a/b;
+		return bolme;
+	}
+	
+	static void Mesaj() {
+		System.out.println("mesaj methodumun içindeyim");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		//KareBul(3,2);
+		System.out.println(KareBul(9,2));
+		
+
+	}
+	
+	
+
+}

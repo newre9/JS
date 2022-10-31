@@ -1,0 +1,29 @@
+package projem;
+
+public class MainClass {
+		
+	static int KareBul(int a,int b) {
+		if(a>b) {
+			return a;
+		}
+		else {
+			return b;
+		}
+	}
+	
+	static void Mesaj() {
+		System.out.println("mesaj methodumun içindeyim");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		//KareBul(3,2);
+		System.out.println(KareBul(3,2));
+		
+
+	}
+	
+	
+
+}

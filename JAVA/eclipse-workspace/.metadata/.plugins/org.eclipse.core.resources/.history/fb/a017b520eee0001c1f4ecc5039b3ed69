@@ -1,0 +1,26 @@
+package projem;
+
+public class MainClass {
+		
+	static String KareBul(String a,String b) {
+		
+		String kare=a+b;
+		return kare;
+	}
+	
+	static void Mesaj() {
+		System.out.println("mesaj methodumun içindeyim");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		KareBul("merhaba","dünya");
+		
+		System.out.println(KareBul("merhaba","dünya"));
+
+	}
+	
+	
+
+}

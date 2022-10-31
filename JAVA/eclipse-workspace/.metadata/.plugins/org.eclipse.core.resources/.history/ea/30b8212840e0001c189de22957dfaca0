@@ -1,0 +1,19 @@
+package projem;
+
+public class MainClass {
+		
+	static int KareBul(int a) {
+		
+		int kare=a*a;
+		return kare;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("kare sonucu:" + KareBul(9));
+
+	}
+	
+	
+
+}

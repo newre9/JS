@@ -1,0 +1,27 @@
+package projem;
+
+public class First {
+
+	static int ToplaMethod(int a, int b ) {
+		
+		int x=a+b;
+		return x;
+		
+	}
+	
+	static int AlanUcgen(int taban, int yuksek) {
+		int alan=(taban*yuksek)/2;
+		return alan;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(AlanUcgen(11,2));
+		
+	}
+	
+	
+	
+
+}

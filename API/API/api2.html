@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+<h1 id="bd"></h1>
+<h2 id="ttl"></h2>
+<h1 id="uid"></h1>
+<button onclick="Api2()">Veri Getir</button>
+<script>
+function Api2(){
+    fetch('https://jsonplaceholder.typicode.com/posts/2')
+    .then(response=>response.json())
+    .then(y=>{
+        console.log(y);
+        const t=y.title;
+        const b=y.body;
+        const u=y.userId;
+        document.getElementById("bd").innerHTML=b;
+        document.getElementById("ttl").innerHTML=t;
+        document.getElementById("uid").innerHTML=u;
+
+
+    })
+}
+</script>
+</body>
+</html>

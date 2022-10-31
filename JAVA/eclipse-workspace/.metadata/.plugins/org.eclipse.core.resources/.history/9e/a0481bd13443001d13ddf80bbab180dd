@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+public class List1C {
+
+	public static void main(String[] args) {
+		ArrayList<String> name=new ArrayList<String>();
+		name.add("Ayşe");
+		name.add("Mehmet");
+		name.add("Fatma");
+		name.add("Murat");
+		name.set(2,"Merve");
+		System.out.println(name.get(2));
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class RandevuC {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		ArrayList<String> Doktor1=new ArrayList<String>();
+		ArrayList<String> Doktor2=new ArrayList<String>();
+		int key=5;
+		int kontrol;
+		while(key==5) {
+			System.out.println("Lütfen bir seçim yapın");
+			System.out.println("**************************");
+			System.out.println("-0- çıkış");
+			System.out.println("-1- Randevu al");
+			System.out.println("-2- Doktor Sayfası");
+			System.out.println("-3- Başhekim Sayfası");
+			System.out.println("*************************");
+		}
+
+	}
+
+}

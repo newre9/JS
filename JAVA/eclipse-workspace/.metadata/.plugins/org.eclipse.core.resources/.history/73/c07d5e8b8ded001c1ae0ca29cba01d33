@@ -1,0 +1,82 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Randevu {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		ArrayList<String> Doktor1= new ArrayList<String>();
+		ArrayList<String> Doktor2= new ArrayList<String>();
+		int key=5;
+		while(key==5) {
+			System.out.println(">>>>>>>>>>>>>>>>>>>>");
+			System.out.println("bir seçim yapın");
+			System.out.println(">>>>>>>>>>>>>>>>>>>>");
+			System.out.println("-0- çıkış   ");
+			System.out.println("-1- randevu al   ");
+			System.out.println("-2- Doktor sayfası  ");
+			System.out.println("-3- Başhekim sayfası  ");
+			System.out.println(">>>>>>>>>>>>>>>>>>>>");
+			String secim=input.nextLine();
+			switch(secim) {
+			case "0":
+				
+				key=0;
+				break;
+			case "1":
+				System.out.println("Seçmek istediğiniz Doktorun ID numasını girin ");
+				System.out.println("**************");
+				System.out.println("-1- Doktor Ferhat   ");
+				System.out.println("-2- Doktor Şirin   ");
+				System.out.println("**************");
+				int  doktorsecim=input.nextInt();
+				System.out.println("isminizi girin  ");
+				String  ekled1=input.nextLine();
+				if(doktorsecim==1) {
+				
+					Doktor1.add(ekled1);
+					System.out.println("isminiz başarı bir şekilde kayıt edildi ");
+				}else if(doktorsecim==2)
+				 {
+					
+					Doktor2.add(ekled1);	
+				}else {
+					
+					System.out.println("böyle bir ID bulunmadı ");
+					
+				}
+				
+			break;
+			case "2":
+				System.out.println("ID numaranızı girin ");
+				int  dId=input.nextInt();
+				if(dId==1) {
+					
+					System.out.println(Doktor1);
+					
+				}else if(dId==2) {
+					System.out.println(Doktor2);
+					
+				}else {
+					
+					System.out.println("böyle bir ID bulunmadı ");
+					
+				}
+				
+				break;
+			case "3":
+				System.out.println("Admin alan");
+				break;
+			default:
+				System.out.println("geçersiz bir seçim");
+				
+				
+				break;
+			}
+			
+			
+		}
+		System.out.println("sistemden çıkış yaptınız");
+
+	}
+
+}

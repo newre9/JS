@@ -1,0 +1,15 @@
+package projem;
+
+public class Fiirst {
+
+	static void FirstMethod() {
+		System.out.println("methodun içindeyim");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

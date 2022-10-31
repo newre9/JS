@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+<div id="demo7">
+<h1>Merhaba</h1>
+<h1>Hello</h1>
+<h1>DOM Elements</h1>
+<p>deneme</p>
+</div>
+
+<button id="demo8" onclick="TagidCalisma()"> Tag & ID App </button>
+
+        <script>
+const x=document.getElementById("demo7");
+const y=x.getElementsByTagName("h1");
+function TagidCalisma(){
+    document.getElementById("demo8").innerHTML=y[2].innerHTML;
+}
+        </script>
+    </body>
+</html>

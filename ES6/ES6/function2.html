@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="in1">
+        <input id="in2">
+        <button onclick="es5()">es5</button>
+        <button onclick="es6()">es6</button>
+        <h1 id="demo8"></h1>
+
+        <script>
+            function es5(){
+                const bir=Number(document.getElementById("in1").value );
+                const iki=Number(document.getElementById("in2").value);
+                const sonuc=Test(bir,iki);
+                document.getElementById("demo8").innerHTML=sonuc;
+            }
+
+            function Test(a,b){
+
+                return a+b;
+
+            }
+
+            function es6(){
+            const b =Number(document.getElementById("in1").value);
+            const i=Number(document.getElementById("in2").value);
+            const s=(y,t)=>{return y+t};
+            document.getElementById("demo8").innerHTML=s(b,i);
+
+
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Proje2C {
+
+	public static void main(String[] args) {
+		Proje1C Obje= new Proje1C();
+		Scanner i=new Scanner(System.in);
+		
+		System.out.println("Döngü kaç defa dönsün ");
+		int k=i.nextInt();
+		Obje.Say(k);
+		
+	}
+
+}

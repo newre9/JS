@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+   <button onclick="Getir()">Al</button> 
+
+<script>
+function Getir(){
+    fetch('https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Tiger_King/daily/20210901/20210930')
+    .then(response=>response.json())
+    .then(x=>{
+
+        console.log(x);
+    })
+
+}
+</script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Dene2C {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int s=1;
+		do {
+            System.out.print("başlamak için -START- Yazın");
+            System.out.print("çıkmak için EXIT- Yazın");
+            String x=scan.nextLine();
+            
+            if(x=="EXIT") {
+            	break;
+            }else if(x=="START") {
+            	System.out.print("bir sayı");
+            	int y=scan.nextInt();
+            	
+            	
+            }
+            
+        }
+        while(s>0);
+		
+	}
+
+}

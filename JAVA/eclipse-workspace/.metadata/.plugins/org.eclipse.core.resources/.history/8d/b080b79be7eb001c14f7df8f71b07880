@@ -1,0 +1,13 @@
+
+public class Second {
+
+	public static void main(String[] args) {
+		 First obje=new First();
+		    
+		    obje.setName("ayse");
+		    
+		    System.out.println(obje.getName());
+
+	}
+
+}

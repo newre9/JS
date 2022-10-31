@@ -1,0 +1,25 @@
+package projem;
+
+public class MainClass {
+		
+	static char KareBul(char a) {
+		System.out.println(a);
+		return a;
+	}
+	
+	static void Mesaj() {
+		System.out.println("mesaj methodumun içindeyim");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		KareBul('N');
+		
+		
+
+	}
+	
+	
+
+}

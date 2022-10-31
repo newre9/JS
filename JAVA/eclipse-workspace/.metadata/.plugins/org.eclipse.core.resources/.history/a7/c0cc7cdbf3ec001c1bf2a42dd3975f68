@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Randevu {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int key=0;
+		while(key==0) {
+			System.out.println("bir seçim yapın");
+			System.out.println("çıkış için -0- basın");
+			System.out.println("randevu için -1- basın");
+			System.out.println("Doktor girişi için -2- basın");
+			System.out.println("Admin için -3- basın");
+			int secim=input.nextInt();
+			switch(secim) {
+			case 0:
+				System.out.println("sistemden çıkış yaptınız");
+				key=1;
+				break;
+			case 1:
+				System.out.println("randevu alan");
+			break;
+			case 2:
+				System.out.println("Doktor alan");
+				break;
+			case 3:
+				System.out.println("Admin alan");
+				break;
+			
+			}
+			
+			
+		}
+
+	}
+
+}

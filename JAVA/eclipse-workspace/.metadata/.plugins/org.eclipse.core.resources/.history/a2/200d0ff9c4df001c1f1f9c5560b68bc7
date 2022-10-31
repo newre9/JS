@@ -1,0 +1,10 @@
+package projem;
+
+public class Second {
+
+	public static void main(String[] args) {
+		First myobje=new First();//obje oluşturdum.
+		System.out.println("objeden gelen değer:" + myobje.a);
+	}
+
+}

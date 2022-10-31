@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1. Sayıyı Giriniz </p>
+    <input id="in1" >
+    <p>2. Sayıyı Giriniz</p>
+    <input id="in2">
+
+<select  id="in3">
+<option selected>Lütfen bir işlem seçin</option>
+<option value="çarpma">*</option>
+<option value="bölme">/</option>
+<option value="toplama">+</option>
+<option value="çıkarma">-</option>
+</select>
+<button onclick="Calculate()">Hesapla </button>
+
+<h1 id="s">Sonuc</h1>
+    <script>
+    function Calculate(){
+    let i1=Number(document.getElementById("in1").value);
+    let i2=Number(document.getElementById("in2").value);
+    let i3=document.getElementById("in3").value;
+    let x;
+
+    switch(i3){
+        case "toplama":
+            x=i1+i2;
+            document.getElementById("s").innerHTML="Toplama sonucu:"+x;
+        break;
+        case "çarpma":
+            x=i1*i2;
+            document.getElementById("s").innerHTML="Çarpma Sonucu:"+x;
+        break;
+        case "bölme":
+            x=i1/i2;
+            document.getElementById("s").innerHTML="Bölme Sonucu:"+x;
+        break;
+        case "çıkarma":
+            x=i1-i2;
+            document.getElementById("s").innerHTML="Çıkarma Sonucu:"+x;
+        break;
+        default:
+            document.getElementById("s").innerHTML="Geçersiz bir seçim";
+        break
+    }
+    
+}
+    </script>
+</body>
+</html>
